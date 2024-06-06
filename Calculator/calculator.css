@@ -1,0 +1,28 @@
+#cal{
+    border: 2px solid ;
+    border-radius: 5px;
+    width: 200px;
+    background-color: rgb(200, 101, 65);
+    margin-left: 55px;
+}
+
+#display{
+    margin: 10px;
+    width: 85%;
+    font-size: 25px;
+    color: brown;
+    background-color: bisque;
+}
+.cal-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buttn{
+    width: 45px;
+    height: 40px;
+    margin: 3px;
+    background-color: burlywood;
+    font-weight: 700;
+    font-size: 20px;
+}

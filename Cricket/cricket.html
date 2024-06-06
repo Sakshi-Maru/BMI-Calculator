@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: darkolivegreen;
+        }
+
+        h1 {
+            color: chartreuse;
+        }
+
+        button {
+            padding: 5px 10px;
+            border: 2px solid rgb(169, 98, 98);
+            background-color: darkgreen;
+            color: orange;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- If-else / Boolean-->
+    <h1>Bat Ball Stump🏏Game</h1>
+
+    <!-- Bat -->
+    <button onclick="
+    let randomNumber= Math.random()*3;
+    let computerChoice;
+
+    if(randomNumber > 0 && randomNumber <=1){
+        computerChoice= 'Bat';
+    }
+    else if(randomNumber >1 && randomNumber <=2){
+        computerChoice='Ball'
+    }
+    else{
+        computerChoice= 'Stump'
+    }
+
+    let resultMsg;
+    if(computerChoice === 'Ball'){
+        resultMsg = `User Won🏆`;
+    }
+    else if(computerChoice === 'Bat'){
+        resultMsg = `It's Tie😢`;
+    }
+    else if(computerChoice === 'Stump'){
+        resultMsg = `Computer has won😭`;
+    }
+
+    alert(`You have chosen Bat. Computer Choice is ${computerChoice} and ${resultMsg}`);
+    "> Bat</button>
+
+    <!-- Ball -->
+    <button onclick="
+ randomNumber= Math.random()*3;
+
+if(randomNumber > 0 && randomNumber <=1){
+    computerChoice= 'Bat';
+}
+else if(randomNumber >1 && randomNumber <=2){
+    computerChoice='Ball'
+}
+else{
+    computerChoice= 'Stump'
+}
+
+
+if(computerChoice === 'Ball'){
+    resultMsg = `It's Tie😢`;
+}
+else if(computerChoice === 'Bat'){
+    resultMsg = `Computer has won😭` ;
+}
+else if(computerChoice === 'Stump'){
+    resultMsg = `User Won🏆`;
+}
+
+alert(`You have chosen Ball. Computer Choice is ${computerChoice} and ${resultMsg}`);
+">Ball</button>
+
+
+    <!-- Stump -->
+
+    <button onclick="
+    randomNumber= Math.random()*3;
+   
+   if(randomNumber > 0 && randomNumber <=1){
+       computerChoice= 'Bat';
+   }
+   else if(randomNumber >1 && randomNumber <=2){
+       computerChoice='Ball'
+   }
+   else{
+       computerChoice= 'Stump'
+   }
+   
+    
+   if(computerChoice === 'Ball'){
+       resultMsg = `Computer has won😭`;
+   }
+   else if(computerChoice === 'Bat'){
+       resultMsg = `User Won🏆` ;
+   }
+   else if(computerChoice === 'Stump'){
+       resultMsg =`It's Tie😢` ;
+   }
+   
+   alert(`You have chosen Stump. Computer Choice is ${computerChoice} and ${resultMsg}`);
+   ">Stump</button>
+</body>
+
+</html>

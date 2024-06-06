@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Form</title>
+    </head>
+    <body>
+        <form>
+            <h1>Registration Form</h1>
+            <dl>
+                <dt>User Name </dt>
+                <dd><input type="text" name="username" autofocus></dd>
+                <dt>Email</dt>
+                <dd><input type="email" name="email" required></dd>
+                <dt>Password</dt>
+                <dd><input type="password" name="pass"></dd>
+                <dt>Gender</dt>
+                <dd><input type="radio" name="gender" value="Male">Male</dd>
+                <dd><input type="radio" name="gender" value="Female">Female</dd>
+                <dd><input type="radio" name="gender" value="Other">Other</dd>
+                <dt>Age</dt>
+                <dd><input type="number" name="age" min="18" max="30"></dd><br>
+                <dt>Birt Date</dt>
+                <dd><input type="date" name="date"></dd><br>
+                <dt>Address</dt>
+                <dd><textarea rows="10" cols="40"></textarea></dd>
+                <dt>Time of Service</dt>
+                <dd><input type="time"></dd><br>
+                <dt>color</dt>
+                <dd><input type="color" value="#0f0fff"></dd><br>
+                <dt>donation in Rupees</dt>
+                <dd><input type="range" min="100" max="10000" step="100"></dd><br>
+                <dt>Location</dt>
+                <dd><input type="checkbox" name="L" value="Maharashtra">Maharashtra</dd>
+                <dd><input type="checkbox" name="L" value="Gujarat">Gujarat</dd>
+                <dd><input type="checkbox" name="L" value="Rajasthan">Rajasthan</dd>
+                <dd><input type="checkbox" name="L" value="Delhi">Delhi</dd>
+                <dd><input type="checkbox" name="L" value="Uttar Pradesh">Uttar Pradesh</dd>
+                <dd><input type="checkbox" name="L" value="Bihar">Bihar</dd>
+                <dd><input type="checkbox" name="L" value="Punjab">Punjab</dd>
+                <dt>Preparing for Download</dt>
+                <dd>
+                    <progress></progress>
+                </dd>
+                <dt>Downloading</dt>
+                <dd>
+                    <progress min="1" max="100" value="50"></progress>
+                </dd>
+                <dt>Downloaded</dt>
+                <dd>
+                    <progress min="1" max="100" value="100"></progress>
+                </dd>
+
+                <br><br>
+                <form onsubmit="alert('form submitted')" onreset="alert('form will reset')">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                </form>
+                
+            </dl>
+        </form>
+    </body>
+</html> 
